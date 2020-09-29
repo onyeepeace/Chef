@@ -11,6 +11,7 @@
 html, body {
     width: 100%;
     min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Header */
@@ -26,11 +27,13 @@ nav {
 }
 
 .menu-toggle {
+    color: #ffffff;
     font-size: 2.2rem;
     position: absolute;
-    top: 50%;
     transform: translateY(-50%);
+    right: 2.5rem;
     cursor: pointer;
+    z-index: 1500;
 }
 
 i.fa-times {
@@ -49,6 +52,7 @@ i.fa-times {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    z-index: 1250;
 }
 
 .nav::before {
@@ -84,7 +88,9 @@ i.fa-times {
 
 .nav-link {
     display: block;
+    color: #ffffff;
     text-transform: uppercase;
+    text-decoration: none;
     font-size: 1.6rem;
     letter-spacing: 2px;
     margin-right: -2px;
