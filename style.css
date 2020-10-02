@@ -66,11 +66,30 @@ i.fa-times {
   transition: transform 0.5s;
 }
 
-.home:hover {
-  /* background-image: url(/images/ed2e735d-cf18-4455-8c0e-ef9c64058b2f.png); */
-  background-color: red;
-  height: 100vh;
-  width: 100%;
+/* .home:hover {
+  background-color: black;
+  color: #ffffff;
+} */
+.about:hover {
+  animation: cameraPan 30s infinite;
+}
+
+@keyframes cameraPan {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 40% 10%;
+  }
+  50% {
+    background-position: 0% 10%;
+  }
+  75% {
+    background-position: 10% 40%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 .nav::before {
