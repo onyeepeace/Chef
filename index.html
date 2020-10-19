@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bakery</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="//use.fontawesome.com/releases/v5.0.11/css/all.css"
-    />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.11/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
   </head>
 
-  <body>
+  <body id="hero">
     <header>
-      <nav class="nav">
-        <div class="menu-toggle">
-          <i class="fas fa-bars"></i>
-          <i class="fas fa-times"></i>
-        </div>
-        <a href="index.html" class="logo">Bakery</a>
-        <ul class="nav-list">
+      <a href="index.html" class="logo">Bakery</a>
+      <span onclick="openNav()" class="openbtn">&#9776;</span>
+      <nav class="overlay" id="myNav">
+        <span class="closebtn" onclick="closeNav()">&times;</span>
+          
+        <ul class="overlay-content">
           <li class="nav-item">
             <a class="nav-link home" href="index.html">Home</a>
           </li>
@@ -34,29 +32,89 @@
           </li>
         </ul>
       </nav>
+      <!-- <span onclick="openNav()" class="openbtn">&#9776;</span> -->
     </header>
 
     <main>
       <div class="container">
         <section class="hero">
-          <div class="text">
-            <h1>Delicious. The way cakes should be.</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              commodi rerum necessitatibus aliquam eaque incidunt reprehenderit
-              quaerat laboriosam, harum ratione.
-            </p>
-          </div>
-          <div class="image">
-            <img
-              src="/images/ed2e735d-cf18-4455-8c0e-ef9c64058b2f.png"
-              alt="picture of a cake slice"
-            />
+          <div class="section main-parallax">
+            <img src="/images/cake-slice.png" alt="tiered cake" class="parallax-img">
+            <div class="parallax"></div>
+            <div class="text">
+              <h1>BAKRY</h1>
+              <p>Delicious cakes here Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, doloribus.</p>
+              <button>Menu</button>
+            </div>
           </div>
         </section>
-        <section class="about"></section>
-        <section class="cakes"></section>
-        <section class="contact"></section>
+
+        <section class="body">
+          <div class="section opposite">
+            <img src="/images/Parsimony Inspired on.jfif" class="parsimony" alt="cake">
+            <div class="text info">
+              <h2>A Bakery That Suits Every Event</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta velit veritatis ad ipsam repudiandae consequuntur nostrum error animi, reiciendis nobis incidunt voluptatibus, illum minus laudantium, in ex officia odio earum?</p>
+              <button>Read More</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="gallery">
+          <div class="section">
+            <div class="image">
+              <img src="/images/jordane-mathieu-5RHodALXtzM-unsplash.jpg" alt="cake">
+              <img src="/images/jordane-mathieu-eDC7851HvYk-unsplash.jpg" alt="cake">
+              <img src="/images/jordane-mathieu-lwkuaGoDTXE-unsplash.jpg" alt="cake">
+              <img src="/images/jordane-mathieu-mLtIBNInDGY-unsplash.jpg" alt="cake">
+            </div>
+            <div class="text talk">
+              <h2>Agege Bread At It's Finest</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta velit veritatis ad ipsam repudiandae consequuntur nostrum error animi, reiciendis nobis incidunt voluptatibus, illum minus laudantium, in ex officia odio earum?</p>
+              <button>Read More</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- <div class="order">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dignissimos beatae nostrum suscipit fugiat laudantium, distinctio mollitia. Soluta sint minus repellat ratione ad! Fugit dolorem non adipisci ea nisi. Omnis debitis quibusdam, voluptatibus tempore at totam earum nobis dicta numquam facere veniam odio, beatae ex explicabo laborum ducimus ut qui vero! Placeat delectus deleniti ex quis alias molestiae itaque nemo ducimus aperiam hic aliquam reiciendis, odit facere nulla quo obcaecati dolorem exercitationem cum sapiente sunt suscipit, dolor et perspiciatis. Iusto nisi architecto qui mollitia odio itaque quam, soluta placeat voluptates optio velit sunt voluptas rerum deserunt recusandae dolore delectus dolores! Ullam qui ex rerum. Quasi, modi. Exercitationem unde natus itaque velit aspernatur minima doloremque eveniet asperiores quidem harum illo consequatur dolor debitis obcaecati suscipit non optio, nesciunt praesentium accusamus quas quos nam? Molestiae quidem incidunt, dolor quis officiis eius veniam vel beatae, dicta eveniet, vero laboriosam quos! Exercitationem, et voluptatem incidunt fugiat facere reiciendis voluptatibus quod accusantium ab. Maxime, vero blanditiis magni suscipit, minus perspiciatis voluptates corrupti dicta hic dolorem sint nemo? Aut blanditiis qui magni, labore suscipit delectus cumque vitae exercitationem nam et ut quas sint dolorum ipsum quae quos, repudiandae molestias excepturi possimus, deserunt perferendis nesciunt. Totam, perspiciatis.</p>
+        </div> -->
+
+        <footer>
+          <div class="container">
+            <div class="back-to-top">
+              <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="footer-content">
+              <div class="footer-content-about animate-top">
+                <h4>About Roso</h4>
+                <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae distinctio eos voluptatum sapiente quos necessitatibus veniam maxime earum esse? Dolores.</p>
+              </div>
+              <div class="footer-content-divider animate-bottom">
+                <div class="social-media">
+                  <h4>Follow along</h4>
+                  <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-tripadvisor"></i></a></li>
+                  </ul>
+                </div>
+                <div class="newsletter-container">
+                  <h4>Newsletter</h4>
+                  <form action="" class="newsletter-form">
+                    <input type="text" class="newsletter-input" placeholder="Your email address">
+                    <button type="submit" class="newsletter-btn">
+                        <i class="fas fa-envelope"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </main>
     <script src="index.js"></script>
