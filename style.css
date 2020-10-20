@@ -144,6 +144,7 @@ button {
 
 /* footer */
 footer {
+  margin-top: 5rem;
   padding: 7.9rem 0;
   background-color: #121212;
   color: #fff;
@@ -156,11 +157,11 @@ a {
 }
 
 .back-to-top {
-  width: 7rem;
-  height: 7rem;
+  width: 3.5rem;
+  height: 3.5rem;
   background-color: #121212;
   position: absolute;
-  top:  -3rem;
+  top:  -1.5rem;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
@@ -169,8 +170,8 @@ a {
 .back-to-top i {
   display: block;
   color: #fff;
-  font-size: 2rem;
-  padding: 2rem;
+  font-size: 1.5rem;
+  padding: 1rem;
   opacity: 0;
   animation: up 2s infinite;
 }
@@ -310,6 +311,10 @@ a {
   .image {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    margin-top: 0;
   }
 
   .footer-content {
