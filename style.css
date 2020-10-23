@@ -32,15 +32,11 @@ header {
 }
 
 .logo {
-  display: flex;
-  justify-content: start;
-  align-items: flex-start;
-  text-align: left;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 700;
   color: #414141;
-  font-family: 'Sansita Swashed', cursive;
+  /* font-family: 'Sansita Swashed', cursive; */
 }
 
 /* The Overlay (background) */
@@ -260,6 +256,11 @@ a {
 }
 
 @media screen and (min-width: 800px) {
+  .logo {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
   .overlay a {
     font-size: 36px
   }
@@ -271,7 +272,7 @@ a {
   }
 
   .openbtn {
-    font-size: 60px;
+    font-size: 40px;
   }
 
   .section {
