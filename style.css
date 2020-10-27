@@ -16,6 +16,10 @@ body {
   color: #414141;
 }
 
+.hpot {
+  display: none;
+}
+
 /* Header */
 header {
   width: 100%;
