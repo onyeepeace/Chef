@@ -69,12 +69,17 @@ header {
 
 /* The navigation links inside the overlay */
 .overlay a {
-  padding: 8px;
+  /* padding: 8px; */
+  margin: 5rem 0;
   text-decoration: none;
   font-size: 20px;
   color: #818181;
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+.overlay a:first-child {
+  margin-top: 0rem;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -85,7 +90,7 @@ header {
 /* Position the close button (top right corner) */
 .closebtn {
   position: absolute;
-  top: 0;
+  top: 1rem;
   right: 35px;
   font-size: 40px;
   cursor: pointer;
@@ -259,6 +264,29 @@ a {
   margin-left: 20.5rem;
 }
 
+/* About styles */
+.about-text p {
+  width: 90%;
+  margin: 0 auto;
+  text-align: start;
+}
+
+/* Contact styles */
+form > * {
+  margin: .5rem 0 .5rem 2rem;
+  display: block;
+}
+
+form label {
+  text-align: left;
+}
+
+form > input, textarea {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 2rem;
+}
+
 @media screen and (min-width: 800px) {
   .logo {
     font-size: 2rem;
@@ -277,6 +305,17 @@ a {
 
   .openbtn {
     font-size: 40px;
+  }
+
+  .img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about-text p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2rem;
   }
 
   .section {
