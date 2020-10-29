@@ -135,7 +135,7 @@ img {
   padding-top: 2rem;
 }
 
-.text p {
+.text p, ul li {
   color: #414141;
   margin-top: 1rem;
   line-height: 2;
@@ -388,5 +388,12 @@ form > input, textarea {
 
   .newsletter-btn {
     margin-left: 15.5rem;
+  }
+
+  /* Cakes */
+  .options {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 }
