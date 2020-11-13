@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +25,7 @@ body {
 /* Header */
 header {
   width: 100%;
-  height: 4rem;
+  height: 7rem;
   position: fixed;
   top: 0;
   overflow: hidden;
@@ -37,10 +39,11 @@ header {
 
 .logo {
   text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: bold;
   color: #414141;
   /* font-family: 'Sansita Swashed', cursive; */
+  font-family: 'Dancing Script', cursive;
 }
 
 /* The Overlay (background) */
@@ -102,7 +105,7 @@ header {
 }
 
 main {
-  margin-top: 4rem;
+  margin-top: 7rem;
 }
 
 .grid-section {
@@ -115,6 +118,23 @@ main {
 
 img {
   width: 100%;
+}
+
+.background {
+  background-image: url(images/thin-diagonal-stripes-background-vector.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  z-index: -999999;
+}
+
+.bg {
+  background-color: #fff;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  bottom: 10%;
+  z-index: -99999;
 }
 
 .text {
@@ -149,12 +169,12 @@ button {
 
 /* footer */
 footer {
-  margin-top: 5rem;
-  padding: 7.9rem 0;
+  padding-top: 5rem;
   background-color: #121212;
   color: #fff;
   text-align: center;
   position: relative;
+  z-index: -999999;
 }
 
 a {
@@ -220,7 +240,7 @@ a {
 
 .social-icons {
   list-style: none;
-  margin-bottom: 5.4rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -235,33 +255,6 @@ a {
 
 .social-icons i:hover, .social-icons i:focus {
   color: #c59d5f;
-}
-
-.newsletter-form {
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.newsletter-input {
-  width: 100%;
-  max-width: 25rem;
-  padding: 1rem;
-  border-radius: .4rem;
-}
-
-.newsletter-btn {
-  background-color: transparent;
-  border: none;
-  color: #252525;
-  cursor: pointer;
-  font-size: 1.6rem;
-  padding: 1px .6rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 20.5rem;
 }
 
 /* About styles */
@@ -289,8 +282,9 @@ form > input, textarea {
 
 @media screen and (min-width: 800px) {
   .logo {
-    font-size: 2rem;
+    font-size: 4rem;
     letter-spacing: 1px;
+    text-decoration: underline;
   }
 
   .overlay a {
@@ -372,22 +366,11 @@ form > input, textarea {
   }
 
   .footer-content-divider {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .social-media, .newsletter-form {
-    width: 100%;
-    max-width: 27.3rem;
-    margin: 0 1rem;
+    display: block;
   }
 
   .social-icons i {
     opacity: 1;
-  }
-
-  .newsletter-btn {
-    margin-left: 15.5rem;
   }
 
   /* Cakes */
