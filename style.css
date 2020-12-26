@@ -25,7 +25,7 @@ body {
 /* Header */
 header {
     width: 100%;
-    height: 7rem;
+    height: 5rem;
     position: fixed;
     top: 0;
     overflow: hidden;
@@ -39,7 +39,7 @@ header {
 
 .logo {
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #414141;
     font-family: 'Dancing Script', cursive;
@@ -97,7 +97,7 @@ header {
 }
 
 main {
-    margin-top: 7rem;
+    margin-top: 5rem;
 }
 
 .parallax {
@@ -152,24 +152,26 @@ img {
 }
 
 .text p {
-    padding: 1rem 0;
+    margin: 1rem 0;
     line-height: 25px;
     font-size: 15px;
 }
 
-button {
-    display: inline;
+.more-button {
+    text-decoration: none;
+    display: inline-block;
     padding: 10px 30px;
     background-color: #f30c6c;
-    border: none;
+    border: 1px solid #000000;
     border-radius: 8px;
     color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
-button:hover {
+.more-button:hover {
     background-color: #ffffff;
     color: #f30c6c;
-
 }
 
 /* footer */
@@ -265,7 +267,7 @@ textarea {
 .button {
     width: 50%;
     padding: 15px 30px;
-    border: 1px solid black;
+    border: 1px solid #000000;
     border-radius: 8px;
     letter-spacing: 2px;
     background-color: #f30c6c;
@@ -281,8 +283,6 @@ textarea {
 /* Media queries */
 @media screen and (min-width: 768px) {
     .img {
-        /* width: 50%; */
-        /* height: 70vh; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -296,7 +296,7 @@ textarea {
     
     .parallax {
         display: block;
-        background-image: url('/images/cake-slice.png');
+        background-image: url('/images/cake\ slices.jpg');
         height: 60vh;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -309,6 +309,17 @@ textarea {
 
     .background {
         height: 60vh;
+    }
+
+    .bg {
+        top: 10%;
+        right: 10%;
+        left: 0;
+        bottom: 10%;
+    }
+    
+    .inner-text {
+        padding: 5rem;
     }
     
     .opposite {
@@ -333,11 +344,6 @@ textarea {
     .info-container {
         padding: 0;
     }
-
-    .image {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
     
     footer {
         margin-top: 0;
@@ -353,7 +359,7 @@ textarea {
         margin: 0 auto 5.4rem;
     }
 
-    /* About styles */
+    /* About page styles */
     .baker > *{
         margin: 2rem;
     }
@@ -364,7 +370,7 @@ textarea {
         font-size: 1.2rem;
     }
 
-    /* Cake styles */
+    /* Cake page styles */
     .icing {
         display: flex;
         align-items: center;
@@ -386,7 +392,7 @@ textarea {
         margin: 2rem 5rem;
     }
 
-    /* Contact page */
+    /* Contact page styles */
     .reach-out {
         width: 50%;
         margin: 5rem auto;
@@ -395,7 +401,7 @@ textarea {
 
 @media screen and (min-width: 1024px) {
     .logo {
-        font-size: 4rem;
+        font-size: 2.5rem;
         letter-spacing: 1px;
     }
 
@@ -412,69 +418,47 @@ textarea {
     .openbtn {
         font-size: 40px;
     }
-
-    .grid-section {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-    }
     
     .parallax {
-        display: block;
-        background-image: url('/images/cake-slice.png');
         height: 100vh;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-    .parallax-img {
-        display: none;
     }
 
     .background {
         height: 100vh;
     }
+
+    .text h1 {
+        font-size: 3rem;
+    }
     
-    .opposite {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 'text img' 'text img';
+    .text h2 {
+        font-size: 2.5rem;
+    }
+    
+    .text p {
+        font-size: 20px;
+        line-height: 30px;
     }
     
     .info {
-        grid-area: text;
         width: 70%;
         margin: auto;
     }
 
-    .parsimony {
-        grid-area: img;
+    .more-button {
+        padding: 20px 40px;
+        margin-top: 1rem;
     }
 
-    .image {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    .footer-content h4 {
+        font-size: 1.5rem;
     }
     
-    footer {
-        margin-top: 0;
+    .footer-content p, .asterisk {
+        font-size: 20px;
     }
     
-    .footer-content {
-        max-width: 77.5rem;
-        margin: auto;
-    }
-    
-    .footer-content-about {
-        max-width: 51.3rem;
-        margin: 0 auto 5.4rem;
-    }
-
-    /* About styles */
-    .about-text p {
-        width: 80%;
-        margin: 0 auto;
-        font-size: 1.2rem;
+    .social-icons i {
+        font-size: 2.5rem;
     }
 }
