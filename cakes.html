@@ -1,85 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.11/css/all.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal"></script>
-</head>
-<body id="hero">
-    <header>
-        <a href="index.html" class="logo">Bakery</a>
-        <span onclick="openNav()" class="openbtn">&#9776;</span>
-        <nav class="overlay" id="myNav">
-            <span class="closebtn" onclick="closeNav()">&times;</span>
-                
-            <ul class="overlay-content">
-                <li class="nav-item">
-                <a class="nav-link home" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link about" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link cakes" href="cakes.html">Cakes</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link contact" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- <span onclick="openNav()" class="openbtn">&#9776;</span> -->
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="//use.fontawesome.com/releases/v5.0.11/css/all.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+    <body id="hero">
+        <header>
+            <a href="index.html" class="logo">Cake House</a>
+            <span onclick="openNav()" class="openbtn">&#9776;</span>
+            <nav class="overlay" id="myNav">
+                <span class="closebtn" onclick="closeNav()">&times;</span>
 
-    <main>
-        <div class="container">
-            <div class="section">
-                <h1 style="text-align: center; margin-bottom: 2rem;">Cake Menu</h1>
-                <img src="/images/jordane-mathieu-lwkuaGoDTXE-unsplash.jpg" alt="cake">
-                <div class="options">
-                    <h2>Reach out for your event</h2>
-                    <p>Cakes can either be covered in buttercream or in fondant. The price of each cake will depend on the style and choice, as well as the size. Below is a list to guide you on the starting prices;</p>
+                <ul class="overlay-content">
+                    <li class="nav-item">
+                        <a class="nav-link home" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link about" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cakes" href="cakes.html">Cakes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-                    <div class="buttercream">
-                        <h2>Buttercream cakes</h2>
-                        <ul>
-                            <li>5" from £45 | serves 8-10 slices</li>
-                            <li>6" from  £55 | serves 15 slices</li>
-                            <li>8" from £85 | serves 25 slices</li>
-                            <li>10" from £120 | serves 40 slices</li>
-                        </ul>
-                    </div>
-                    <div class="fondant">
-                        <h2>Fondant cakes</h2>
-                        <ul>
-                            <li>5" from £75 | serves 8-10 slices</li>
-                            <li>6" from  £95 | serves 15 slices</li>
-                            <li>8" from £110 | serves 25 slices</li>
-                            <li>10" from £135 | serves 40 slices</li>
-                        </ul>
-                    </div>
+        <main>
+            <section>
+                <img
+                    src="/images/cupcake.jpg"
+                    alt="cake"
+                />
+                <div class="cake info-container">
+                    <div class="options text">
+                        <h1>Cake Menu</h1>
+                        <p>
+                            We have crafted a special menu of moist cakes which can be paired together with our decadent fillings and frostings for the best flavours.
+                        </p>
+                        <p>
+                            Cakes can either be covered in buttercream or in
+                            fondant. The price of each cake will depend on the
+                            style and choice, as well as the size. Below is a
+                            list to guide you on the starting prices;
+                        </p>
 
-                    <div class="flavours">
-                        <h2>Flavours</h2>
-                        <ul>
-                            <li>Lovely Lemon | lemon sponge with lemon curd and buttercream</li>
-                            <li>Chocolate truffle | a dark and beautiful chocolate sponge layered with dark chocolate ganache.</li>
-                            <li>Chocolate & Praliné | the same chocolate sponge, filled with homemade hazelnut and almonds praliné buttercream (with orange zests in option)</li>
-                            <li>Carrot Cake | a classic carrot sponge full of flavours and spices filled with vanilla buttercream.</li>
-                            <li>Coffee & Hazelnut | A twist to the classic Coffee & Walnuts, a moist coffee sponge filled with homemade hazelnut praliné buttercream.</li>
-                            <li>Almond, lemon and raspberry | a light almond sponge baked with raspberries and filled with lemon curd and buttercream. A must-have!</li>
-                            <li>Maroccan Orange Blossom, Pistachio & Raspberry | a moist Orange sponge baked with fresh raspberries and filled with a homemade pistachio cream</li>
-                        </ul>
+                        <div class="icing">
+                            <div class="buttercream">
+                                <h1>Buttercream cakes</h1>
+                                <ul>
+                                    <li>5" from £45 | serves 8-10 slices</li>
+                                    <li>6" from £55 | serves 15 slices</li>
+                                    <li>8" from £85 | serves 25 slices</li>
+                                    <li>10" from £120 | serves 40 slices</li>
+                                </ul>
+                            </div>
+
+                            <div class="fondant">
+                                <h1>Fondant cakes</h1>
+                                <ul>
+                                    <li>5" from £75 | serves 8-10 slices</li>
+                                    <li>6" from £95 | serves 15 slices</li>
+                                    <li>8" from £110 | serves 25 slices</li>
+                                    <li>10" from £135 | serves 40 slices</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="flavours">
+                            <h1>Flavours</h1>
+                            <div class="flavour-list">
+                                <ul>
+                                    <li>
+                                        <span>Lovely Lemon</span> <br> Lemon sponge with lemon curd
+                                        and buttercream
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <span>Chocolate truffle</span> <br> A dark and beautiful
+                                        chocolate sponge layered with dark chocolate
+                                        ganache
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <span>Chocolate & Praliné</span> <br>  The same chocolate
+                                        sponge, filled with homemade hazelnut and
+                                        almonds praliné buttercream (with orange
+                                        zests in option)
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <span>Carrot Cake</span> <br> A classic carrot sponge full
+                                        of flavours and spices filled with vanilla
+                                        buttercream
+                                    </li>
+                                    <hr>
+                                </ul>
+
+                                <ul>
+                                    <li>
+                                        <span>Vanilla Bean</span> <br> Vanilla bean sponge
+                                        filled with strawberry jam and covered with vanilla buttercream
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <span>Coffee & Hazelnut</span> <br> A twist to the classic
+                                        Coffee & Walnuts, a moist coffee sponge
+                                        filled with homemade hazelnut praliné
+                                        buttercream
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <span>Almond, lemon and raspberry</span> <br> A light almond
+                                        sponge baked with raspberries and filled
+                                        with lemon curd and buttercream
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <span>Maroccan Orange Blossom, Pistachio &
+                                        Raspberry</span> <br> A moist Orange sponge baked with
+                                        fresh raspberries and filled with a homemade
+                                        pistachio cream
+                                    </li>
+                                    <hr>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </main>
-
-    <script src="index.js"></script>
-</body>
+            </section>
+            <footer>
+                <div class="container">
+                    <div class="footer-content">
+                        <h4>Cake House</h4>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                        <p>Ealing, West London, W5 5RF</p>
+                        <div class="social-media">
+                            <h4>Follow along</h4>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="index.js"></script>
+    </body>
 </html>

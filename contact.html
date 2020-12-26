@@ -1,62 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.11/css/all.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal"></script>
-</head>
-<body id="hero">
-    <header>
-        <a href="index.html" class="logo">Bakery</a>
-        <span onclick="openNav()" class="openbtn">&#9776;</span>
-        <nav class="overlay" id="myNav">
-            <span class="closebtn" onclick="closeNav()">&times;</span>
-                
-            <ul class="overlay-content">
-                <li class="nav-item">
-                <a class="nav-link home" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link about" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link cakes" href="cakes.html">Cakes</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link contact" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- <span onclick="openNav()" class="openbtn">&#9776;</span> -->
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="//use.fontawesome.com/releases/v5.0.11/css/all.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+    <body id="hero">
+        <header>
+            <a href="index.html" class="logo">Cake House</a>
+            <span onclick="openNav()" class="openbtn">&#9776;</span>
+            <nav class="overlay" id="myNav">
+                <span class="closebtn" onclick="closeNav()">&times;</span>
 
-    <main>
-        <div class="container">
-            <div class="section">
-                <img src="/images/deva-williamson-Kppw90QC_aE-unsplash.jpg" alt="cake with sprinkles">
-                <div class="text">
-                    <h2>Reach out for your event</h2>
-                    <form method="POST" action="https://formspree.io/f/mvovaerv">
-                        <label for="name">Name</label><br>
-                        <input type="text" name="name" id="name" required><br>
-                        <label for="email">Your Email</label><br>
-                        <input type="email" name="_replyto" id="email" required><br>
-                        <label for="date">Event Date</label><br>
-                        <input type="date" name="date" id="date" required><br>
-                        <label for="message">Message</label><br>
-                        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-                        <button type="submit">Submit</button>
-                    </form>
+                <ul class="overlay-content">
+                    <li class="nav-item">
+                        <a class="nav-link home" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link about" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cakes" href="cakes.html">Cakes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div class="info-container reach-out">
+                    <div class="text">
+                        <h1>Cake Enqiry</h1>
+                        <form
+                            method="POST"
+                            action="https://formspree.io/f/mvovaerv"
+                        >
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                required
+                            />
+                            <br />
+                            <label for="email">Your Email</label>
+                            <input
+                                type="email"
+                                name="_replyto"
+                                id="email"
+                                required
+                            />
+                            <br />
+                            <label for="date">Event Date</label>
+                            <input
+                                type="date"
+                                name="date"
+                                id="date"
+                                required
+                            />
+                            <br />
+                            <label for="date">Number of Guests</label>
+                            <input
+                                type="number"
+                                name="guests"
+                                id="guests"
+                                required
+                            />
+                            <br />
+                            <label for="message">Message</label>
+                            <textarea
+                                name="message"
+                                id="message"
+                                cols="30"
+                                rows="10"
+                                required
+                            ></textarea>
+                            <br>
+                            <button class="button" type="submit">SUBMIT</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </main>
+            </section>
 
-    <script src="index.js"></script>
-</body>
+            <footer>
+                <div class="container">
+                    <div class="footer-content">
+                        <h4>Cake House</h4>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                        <p>Ealing, West London, W5 5RF</p>
+                        <div class="social-media">
+                            <h4>Follow along</h4>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <script src="index.js"></script>
+    </body>
 </html>

@@ -1,382 +1,480 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
-  font-size: 16px;
+    font-size: 15px;
 }
 
 html,
 body {
-  width: 100%;
-  min-height: 100vh;
-  font-family: 'Muli', sans-serif;
-  color: #414141;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Muli', sans-serif;
+    color: #414141;
 }
 
 .hpot {
-  display: none;
+    display: none;
 }
 
 /* Header */
 header {
-  width: 100%;
-  height: 7rem;
-  position: fixed;
-  top: 0;
-  overflow: hidden;
-  background-color: #ffffff;
-  box-shadow: 0px 2px 2px #e0dede;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 2rem;
+    width: 100%;
+    height: 7rem;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 2px #e0dede;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
 }
 
 .logo {
-  text-decoration: none;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #414141;
-  /* font-family: 'Sansita Swashed', cursive; */
-  font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #414141;
+    font-family: 'Dancing Script', cursive;
 }
 
-/* The Overlay (background) */
 .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-  height: 100%;
-  width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  /* background-color: rgba(0,0,0, 0.9); */ /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    transition: 0.5s; 
 }
 
-/* Position the content inside the overlay */
 .overlay-content {
-  position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center;
+    margin-top: 30px; 
 }
 
-/* The navigation links inside the overlay */
 .overlay a {
-  /* padding: 8px; */
-  margin: 5rem 0;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+    margin: 5rem 0;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block; 
+    transition: 0.3s; 
 }
 
 .overlay a:first-child {
-  margin-top: 0rem;
+    margin-top: 0rem;
 }
 
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
 }
 
-/* Position the close button (top right corner) */
 .closebtn {
-  position: absolute;
-  top: 1rem;
-  right: 35px;
-  font-size: 40px;
-  cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 35px;
+    font-size: 40px;
+    cursor: pointer;
 }
 
 .openbtn {
-  cursor: pointer;
-  font-size: 40px;
+    cursor: pointer;
+    font-size: 40px;
 }
 
 main {
-  margin-top: 7rem;
-}
-
-.grid-section {
-  margin: 3rem 0;
+    margin-top: 7rem;
 }
 
 .parallax {
-  display: none;
+    display: none;
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
 
 .background {
-  background-image: url(images/thin-diagonal-stripes-background-vector.jpg);
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  z-index: -999999;
+    background-image: url(images/thin-diagonal-stripes-background-vector.jpg);
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+    z-index: -999999;
 }
 
 .bg {
-  background-color: #fff;
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  bottom: 10%;
-  z-index: -99999;
+    background-color: #fff;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    left: 0;
+    bottom: 10%;
+    z-index: -99999;
+}
+
+.inner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
 }
 
 .text {
-  text-align: center;
-  color: #f30c6c;
-}
-
-.text > * {
-  padding-bottom: 1rem;
+    text-align: center;
 }
 
 .text h1 {
-  font-size: 3rem;
-  padding-top: 2rem;
+    font-size: 2rem;
+    padding: 2rem 0 1rem;
+    color: #f30c6c;
+    font-family: 'Dancing Script', cursive;
 }
 
 .text h2 {
-  padding-top: 2rem;
+    padding: 2rem 0 0rem;
+    color: #f30c6c;
+    font-family: 'Dancing Script', cursive;
 }
 
-.text p, ul li {
-  color: #414141;
-  margin-top: 1rem;
-  line-height: 2;
+.text p {
+    padding: 1rem 0;
+    line-height: 25px;
+    font-size: 15px;
 }
 
 button {
-  padding: 10px 30px;
-  background-color: #ffffff;
-  color: #414141;
+    display: inline;
+    padding: 10px 30px;
+    background-color: #f30c6c;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #f30c6c;
+
 }
 
 /* footer */
 footer {
-  padding-top: 5rem;
-  background-color: #121212;
-  color: #fff;
-  text-align: center;
-  position: relative;
-  z-index: -999999;
-}
-
-a {
-  text-decoration: none;
-}
-
-.back-to-top {
-  width: 3.5rem;
-  height: 3.5rem;
-  background-color: #121212;
-  position: absolute;
-  top:  -1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 50%;
-}
-
-.back-to-top i {
-  display: block;
-  color: #fff;
-  font-size: 1.5rem;
-  padding: 1rem;
-  opacity: 0;
-  animation: up 2s infinite;
-}
-
-@keyframes up {
-  0% {
-      opacity: 0;
-  }
-  50% {
-      opacity: 1;
-  }
-  100% {
-      opacity: 0;
-      transform: translateY(-1rem);
-  }
+    padding: 4rem 0;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
 }
 
 .footer-content {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .footer-content h4 {
-  font-size: 1.9rem;
-  text-transform: uppercase;
-  font-weight: 100;
-  letter-spacing: 3px;
-  margin-bottom: 3rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
 }
 
-.footer-content .asterisk {
-  margin: 2.4rem 0;
-}
-
-.footer-content-about {
-  margin-bottom: 5.4rem;
-}
-
-.footer-content-about p {
-  line-height: 2;
+.footer-content p, .asterisk {
+    margin: 2rem 0;
+    padding: 0 .5rem;
+    color: #f30c6c;
 }
 
 .social-icons {
-  list-style: none;
-  margin-bottom: 2rem;
-  display: flex;
-  justify-content: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 .social-icons i {
-  font-size: 2rem;
-  color: #fff;
-  padding: 0.8rem 2rem;
-  opacity: 0.5;
-  transition: color .5s;
+    font-size: 2rem;
+    color: #fff;
+    padding: 2rem;
+    transition: color .5s;
 }
 
 .social-icons i:hover, .social-icons i:focus {
-  color: #c59d5f;
+    color: #f30c6c;
+}
+
+.info-container {
+    padding: 1rem 3rem 3rem;
 }
 
 /* About styles */
 .about-text p {
-  width: 90%;
-  margin: 0 auto;
-  text-align: start;
+    text-align: start;
+}
+
+/* Cakes styles */
+.cake ul {
+    list-style: none;
+}
+
+.flavours li {
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+hr {
+    width: 70%;
+    margin: auto;
+    color: #f8f4f4;
+}
+
+.flavours span {
+    font-weight: bold;
+    font-size: 16px;
 }
 
 /* Contact styles */
 form > * {
-  margin: .5rem 0 .5rem 2rem;
-  display: block;
+    padding: 0.5rem 0;
+    display: block;
 }
 
 form label {
-  text-align: left;
+    text-align: start;
 }
 
-form > input, textarea {
-  width: 50%;
-  padding: 10px;
-  margin-bottom: 2rem;
+form > input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 800px) {
-  .logo {
-    font-size: 4rem;
-    letter-spacing: 1px;
-    text-decoration: underline;
-  }
+.button {
+    width: 50%;
+    padding: 15px 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    background-color: #f30c6c;
+    color: #f1f1f1;
+    cursor: pointer;
+}
 
-  .overlay a {
-    font-size: 36px
-  }
+.button:hover {
+    background-color: transparent;
+    color: #f30c6c;
+}
 
- .closebtn {
-    font-size: 60px;
-    top: 20px;
-    right: 45px;
-  }
+/* Media queries */
+@media screen and (min-width: 768px) {
+    .img {
+        /* width: 50%; */
+        /* height: 70vh; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-  .openbtn {
-    font-size: 40px;
-  }
+    .grid-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    
+    .parallax {
+        display: block;
+        background-image: url('/images/cake-slice.png');
+        height: 60vh;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 
-  .img {
-    width: 80%;
-    margin: 0 auto;
-  }
+    .parallax-img {
+        display: none;
+    }
 
-  .about-text p {
-    width: 80%;
-    margin: 0 auto;
-    font-size: 1.2rem;
-  }
+    .background {
+        height: 60vh;
+    }
+    
+    .opposite {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'text img' 'text img';
+    }
+    
+    .info {
+        grid-area: text;
+        margin: 0 2rem 2rem;
+    }
 
-  .grid-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    margin: 0;
-  }
+    .fine {
+        margin: 0 2rem 1rem;
+    }
 
-  .parallax {
-    display: block;
-    background-image: url("/images/cake-slice.png");
-    height: 100vh;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+    .parsimony {
+        grid-area: img;
+    }
 
-  .parallax-img {
-    display: none;
-  }
+    .info-container {
+        padding: 0;
+    }
 
-  .opposite {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "text img" "text img";
-  }
+    .image {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    footer {
+        margin-top: 0;
+    }
+    
+    .footer-content {
+        max-width: 77.5rem;
+        margin: auto;
+    }
+    
+    .footer-content-about {
+        max-width: 51.3rem;
+        margin: 0 auto 5.4rem;
+    }
 
-  .info {
-    grid-area: text;
-  }
+    /* About styles */
+    .baker > *{
+        margin: 2rem;
+    }
 
-  .parsimony {
-    grid-area: img;
-  }
+    .about-text p {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
 
-  .image {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
+    /* Cake styles */
+    .icing {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-  footer {
-    margin-top: 0;
-  }
+    .icing > div {
+        margin: 2rem;
+    }
 
-  .footer-content {
-    max-width: 77.5rem;
-    margin: auto;
-  }
+    .icing li {
+        padding: 1rem;
+    }
 
-  .footer-content-about {
-    max-width: 51.3rem;
-    margin: 0 auto 5.4rem;
-  }
+    .flavour-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 5rem;
+    }
 
-  .footer-content-divider {
-    display: block;
-  }
+    /* Contact page */
+    .reach-out {
+        width: 50%;
+        margin: 5rem auto;
+    }
+}
 
-  .social-icons i {
-    opacity: 1;
-  }
+@media screen and (min-width: 1024px) {
+    .logo {
+        font-size: 4rem;
+        letter-spacing: 1px;
+    }
 
-  /* Cakes */
-  /* .options {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  } */
+    .overlay a {
+        font-size: 36px;
+    }
+
+    .closebtn {
+        font-size: 60px;
+        top: 20px;
+        right: 45px;
+    }
+
+    .openbtn {
+        font-size: 40px;
+    }
+
+    .grid-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    
+    .parallax {
+        display: block;
+        background-image: url('/images/cake-slice.png');
+        height: 100vh;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .parallax-img {
+        display: none;
+    }
+
+    .background {
+        height: 100vh;
+    }
+    
+    .opposite {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'text img' 'text img';
+    }
+    
+    .info {
+        grid-area: text;
+        width: 70%;
+        margin: auto;
+    }
+
+    .parsimony {
+        grid-area: img;
+    }
+
+    .image {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    footer {
+        margin-top: 0;
+    }
+    
+    .footer-content {
+        max-width: 77.5rem;
+        margin: auto;
+    }
+    
+    .footer-content-about {
+        max-width: 51.3rem;
+        margin: 0 auto 5.4rem;
+    }
+
+    /* About styles */
+    .about-text p {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
 }

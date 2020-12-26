@@ -1,61 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.11/css/all.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal"></script>
-</head>
-<body id="hero">
-    <header>
-        <a href="index.html" class="logo">Bakery</a>
-        <span onclick="openNav()" class="openbtn">&#9776;</span>
-        <nav class="overlay" id="myNav">
-            <span class="closebtn" onclick="closeNav()">&times;</span>
-                
-            <ul class="overlay-content">
-                <li class="nav-item">
-                <a class="nav-link home" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link about" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link cakes" href="cakes.html">Cakes</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link contact" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- <span onclick="openNav()" class="openbtn">&#9776;</span> -->
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Us</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="//use.fontawesome.com/releases/v5.0.11/css/all.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+    <body id="hero">
+        <header>
+            <a href="index.html" class="logo">Cake House</a>
+            <span onclick="openNav()" class="openbtn">&#9776;</span>
+            <nav class="overlay" id="myNav">
+                <span class="closebtn" onclick="closeNav()">&times;</span>
 
-    <main>
-        <div class="container">
-            <div class="section">
-                <div class="img">
-                    <img src="/images/male-chef-holding-plate-of-sliced-cake.jpg" alt="cake with sprinkles">
+                <ul class="overlay-content">
+                    <li class="nav-item">
+                        <a class="nav-link home" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link about" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cakes" href="cakes.html">Cakes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <img
+                src="/images/frosting.jpg"
+                alt="Baker frosting cake"
+                class="img"
+                />
+                <div class="info-container baker">
+                    <div class="text about-text">
+                        <h1>Who We Are</h1>
+                        <p>
+                            We make beautiful and delicious cakes, cupcakes and
+                            cookies for weddings, birthdays and all other
+                            special occasions. <br />
+                            We take bookings up to 2 months prior to your event
+                            date. We also take express orders at an increased
+                            cost.
+                        </p>
+                    </div>
+
+                    <div class="text about-text">
+                        <h1>Our Story</h1>
+                        <p>
+                            Our adventure started with one humble shop in
+                            Ealing, West London. Ms. Penelope, after attending
+                            Le Cordon Bleu, has fabricated the brand on two
+                            fundamental standards – quality and the client.
+                            <br />
+
+                            We bake happiness for you in the face of cake. Let
+                            us deliver sweetness in your lives.
+                        </p>
+                    </div>
                 </div>
-                <div class="text about-text">
-                    <h2>Who We Are</h2>
-                    <p>We make beautiful and delicious cakes, cupcakes and cookies for weddings, birthdays and all other special occasions. <br> We take bookings up to 2 months prior to your event date. We also take express orders at an increased cost.</p>
+            </section>
+            <footer>
+                <div class="container">
+                    <div class="footer-content">
+                        <h4>Cake House</h4>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                        <p>Ealing, West London, W5 5RF</p>
+                        <div class="social-media">
+                            <h4>Follow along</h4>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+            </footer>
+        </main>
 
-                <div class="text about-text">
-                    <h2>Our Story</h2>
-                    <p>Our adventure started with one humble shop in Ealing, West London. Ms. Penelope, after attending Le Cordon Bleu, has fabricated the brand on two fundamental standards – quality and the client. <br>
-
-                    We bake happiness for you in the face of cake. Let us deliver sweetness in your lives.</p>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <script src="index.js"></script>
-</body>
+        <script src="index.js"></script>
+    </body>
 </html>
